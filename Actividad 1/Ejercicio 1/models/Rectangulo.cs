@@ -26,5 +26,10 @@ namespace Ejercicio_1.models
         {
             return Ancho * Largo;
         }
+
+        public double getLargo()
+        {
+            return Largo;
+        }
     }
 }

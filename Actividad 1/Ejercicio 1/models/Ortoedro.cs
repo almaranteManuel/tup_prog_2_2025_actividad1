@@ -29,5 +29,11 @@ namespace Ejercicio_1.models
             double areaLateral = laterales[0].CalcularArea();
             return areaBase*2 + areaLateral*4;
         }
+
+        public double calcularVolumen()
+        {
+            double volumen = bases[0].CalcularArea();
+            return laterales[0].getLargo() * volumen;
+        }
     }
 }

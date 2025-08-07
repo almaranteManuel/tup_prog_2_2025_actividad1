@@ -35,5 +35,10 @@ namespace Ejercicio_1.models
             double volumen = bases[0].CalcularArea();
             return laterales[0].getLargo() * volumen;
         }
+
+        public string Describir()
+        {
+            return "Ortoedro";
+        }
     }
 }

@@ -12,7 +12,13 @@ namespace Ejercicio_1
         private void btnPrueba_Click(object sender, EventArgs e)
         {
             Ortoedro objeto3 = new Ortoedro(7, 7, 21);
-            textBox1.Text = $"figura: {objeto3.Describir()} \r\nvolumen: {objeto3.calcularVolumen()} \r\narea: {objeto3.calcularArea()}";
+
+            Rectangulo objeto2 = new Rectangulo(2, 4);
+
+            textBox1.Text += $@"[
+              {objeto2.Describir()},
+              {objeto3.Describir()},
+            ]";
         }
     }
 }

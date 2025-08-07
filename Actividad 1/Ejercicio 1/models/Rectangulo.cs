@@ -19,7 +19,13 @@ namespace Ejercicio_1.models
 
         public string Describir()
         {
-            return "Rectangulo";
+            string json = $@"{{
+                ""Lado"": {this.Largo},
+                ""Ancho"": {this.Ancho},
+            }}";
+
+            return json;
+           
         }
 
         public double CalcularArea()

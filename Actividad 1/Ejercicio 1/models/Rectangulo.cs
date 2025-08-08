@@ -20,12 +20,13 @@ namespace Ejercicio_1.models
         public string Describir()
         {
             string json = $@"{{
-                ""Lado"": {this.Largo},
+                ""Figura"": ""Rectángulo"",
                 ""Ancho"": {this.Ancho},
+                ""Largo"": {this.Largo},
+                ""Área"": {this.CalcularArea()}
             }}";
 
             return json;
-           
         }
 
         public double CalcularArea()

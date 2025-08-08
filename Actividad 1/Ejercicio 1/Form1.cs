@@ -11,14 +11,19 @@ namespace Ejercicio_1
 
         private void btnPrueba_Click(object sender, EventArgs e)
         {
-            Ortoedro objeto3 = new Ortoedro(7, 7, 21);
-
             Rectangulo objeto2 = new Rectangulo(2, 4);
+            Ortoedro objeto3 = new Ortoedro(7, 7, 21);
+            Cuadrado objeto4 = new Cuadrado(6);
+            Cubo objeto5 = new Cubo(6);
 
-            textBox1.Text += $@"[
-              {objeto2.Describir()},
-              {objeto3.Describir()},
-            ]";
+            string resultado = "[\n" +
+            objeto2.Describir() + ",\n" +
+            objeto3.Describir() + ",\n" +
+            objeto4.Describir() + ",\n" +
+            objeto5.Describir() + "\n" +
+            "]";
+
+            textBox1.Text = resultado;
         }
     }
 }
